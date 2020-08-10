@@ -1,5 +1,5 @@
 
-<!--This script is for posting the timesheet for each student it's sent to admin--> 
+<!--This script is for posting the timesheet for each student it's sent to admin-->
 
 <html>
 	<head>
@@ -33,14 +33,14 @@ $(window).load(function(){
 
 <h2 class="indexnav"><center>ECHO TIMESHEET</center></h2>
 
-<form action="index.php" method="POST" > 
+<form action="index.php" method="POST" >
 <center><div class= "pure-grouped">
 
 <?php
-session_start(); 
+session_start();
 //error_reporting(0);
-include("new_echostudentscript.php"); //This includes the functions file. 
-$result = mysqli_connect('localhost','ECHOstudent','bSdRb5','Timesheet'); //Connects to the mysql database 
+include("new_echostudentscript.php"); //This includes the functions file.
+$result = mysqli_connect('#','#','#','#'); //Connects to the mysql database 
 
 	$fname = ucfirst(@$_POST['f_name']);
 	$lname = @$_POST['l_name'];
@@ -52,13 +52,13 @@ $result = mysqli_connect('localhost','ECHOstudent','bSdRb5','Timesheet'); //Conn
 	$p = @$_POST['post'];
 
 if(isset($p)){
-if(!isset($fname) || trim($fname) == "" || !isset($lname) || trim($lname) == "" || !isset($age) || 
+if(!isset($fname) || trim($fname) == "" || !isset($lname) || trim($lname) == "" || !isset($age) ||
 	trim($age) == "" || !isset($date)   || trim($date) == "" || !isset($school)   || trim($school) == ""|| !isset($email) || trim($email) == "" ||
-  !isset($hours) || trim($hours) == "")    
-{	
+  !isset($hours) || trim($hours) == "")
+{
 	 echo "Please fill out everything in the form";
 	 //we will replace this the notification noty applicatoin
- 	  
+
 }
 else{
 
@@ -69,11 +69,11 @@ register($fname,$lname,$age,$date,$hours,$school,$email);
   echo '}, 1000);</script>';
  updatingstudenthours($fname,$hours,$school);
 updatingschoolshours($hours,$school);
-//sending a message to valita 
+//sending a message to valita
 //emailsender($fname);
 
-//this sends the information to the database/ 
-  
+//this sends the information to the database/
+
   	}
 }
 ?>
@@ -81,12 +81,12 @@ updatingschoolshours($hours,$school);
 Basic info
 	<input type="text" name="f_name" placeholder="First Name" >
 </br>
-	<input type="text" name="l_name" placeholder="Last Name"    > 
+	<input type="text" name="l_name" placeholder="Last Name"    >
 </br>
 	<input type="number" name="age_number" min="0" max="100" placeholder="Age"  >
 </br>
-	
-	<input type="text" name="email" placeholder="Email" > 
+
+	<input type="text" name="email" placeholder="Email" >
 </br>
 Weekending
 	<input type="date" name="week_date" min="2000-01-02" placeholder="Date"  >
@@ -109,12 +109,12 @@ Where do you go to school ?
 <input type="number" name="hours" min="0" max="100"  placeholder="How many hours ex.40-50hrs"   >
 </br>
 
-	
+
 
 </br>
 		<center>
 				<input type="submit" name="post" placeholder="Submit" id="submit-button">
-								</center> 
+								</center>
 
 </div>
 

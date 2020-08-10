@@ -1,16 +1,16 @@
-<?php 
+<?php
 
 include("db_connect.php");
-$result = mysqli_connect('localhost','ECHOstudent','bSdRb5','Timesheet');
+$result = mysqli_connect('#','#','#','#');
 //this is to add the echo student database
 function register($fn, $ln, $ag, $d, $hr, $sch, $mail) {
 
-$result = mysqli_connect('localhost','ECHOstudent','bSdRb5','Timesheet');
+$result = mysqli_connect('#','#','#','#');
 
-//connects to the databases 
+//connects to the databases
 $sql = "INSERT INTO users (f_name,l_name,age,week,hours,school,email) VALUES ('$fn', '$ln','$ag','$d','$hr','$sch','$mail')";
 $k = mysqli_query($result,$sql);
-	
+
 
 }
 
@@ -22,14 +22,14 @@ function redirect(){
 
 
 
-//this function is to see if the inputs is empty 
+//this function is to see if the inputs is empty
 
 
 
 function loginout(){
 	session_start();
 	session_destroy();
-	//redirect this to the home page 
+	//redirect this to the home page
 	header("Location:index.php");
 	exit();
 
@@ -39,8 +39,8 @@ function emailsender($name) {
 	$to = "";
 	$subject = "New Student Timesheet submission Notification";
 	$message = " We have a new notification of ". $name ."sending a new time information";
-	$headers = 'From : www.echotimesheet.com' . "\r\n" . 
-		'Reply-To: www.echotimesheet.com'. "\r\n" . 
+	$headers = 'From : www.echotimesheet.com' . "\r\n" .
+		'Reply-To: www.echotimesheet.com'. "\r\n" .
 		'X-Mailer: PHP:' . phpversion();
 
 
@@ -59,14 +59,14 @@ function updatingstudenthours($fname1,$hours1, $school1){
 	$result = $query;
 	if(mysqli_num_rows($result) == 1){
 		$query3 = mysqli_query($con, "UPDATE individual_student SET t_hours  = t_hours + $hours1 WHERE Name = '$fname1' AND school = '$school1' ");
-		
+
 
 	}else {
 		$query2 = mysqli_query($con, "INSERT INTO individual_student (Name,t_hours,school) VALUES ('$fname1', '$hours1','$school1')");
-		
+
 
 	}
-	
+
 
 }
 function updatingschoolshours($hrs,$schl){
@@ -79,10 +79,10 @@ $results = $qu;
 
 if(mysqli_num_rows($results) == 1){
 	$q =  mysqli_query($con,"UPDATE School2 SET Thours  = Thours + $hrs WHERE Name = '$schl' ");
-	
+
 }else {
 	$q2 =  mysqli_query($con,"INSERT INTO School2 (Name,Thours) VALUES ('$schl', '$hrs')");
-	
+
 }
 }
 function tbl_deletion(){
@@ -100,10 +100,10 @@ function admin_add(){
 	$a_c = $_POST['admin_change'];
 	if(isset($pst)){
 		if(!isset($a_a)){
-			
+
 		}
 	}
-	
+
 
 
 

@@ -13,7 +13,7 @@
 
 <body>
 <div id="nav">
-	
+
 		<h1><a href="home_time.php">ECHO Timesheet Admin</a></h1>
 
 </div>
@@ -21,12 +21,12 @@
 
 <div id="sidebar">
 	<center><h1>sidebar</h1></center>
-										
+
 <ul class="list">
 	<li><a href="Cummulative.php">Cumulative summary</a></li>
 	<li><a href="Account.php">Account Setting</a></li>
 	<li><a href="">Help</a></li>
-	<li><?php 
+	<li><?php
 		echo "<a href='logout.php' id='logout'>Logout</a>"
 	?></li>
 
@@ -45,9 +45,9 @@
 			<input type="submit" name="adding_admin_new" value="Add admin"></br>
 
 			</form>
-			<?php 
+			<?php
 
-			$result = mysqli_connect('localhost','ECHOstudent','bSdRb5','Timesheet');
+			$result = mysqli_connect('#','#','#','#');
 			$con = $result;
 			$add_name = @$_POST['new_admin'];
 			$add_pass = md5(@$_POST['new_pass']);
@@ -55,11 +55,11 @@
 
 			if(isset($submit)){
 				if(!isset($add_name) || trim($add_name) =="" || !isset($add_pass)  || trim($add_pass) == ""){
-				//we will send a notification that you added new notication using notify 
+				//we will send a notification that you added new notication using notify
 				}else {
 					$sql = "INSERT INTO echoadmin (user,password) VALUES ('$add_name','$add_pass')";
 					$query = mysqli_query($con,$sql);
-				  
+
 				}
 
 			}
@@ -67,9 +67,9 @@
 
 			?>
 <hr><h1>List of Admin</h1>
-			<?php 
-			$result = mysqli_connect('localhost','ECHOstudent','bSdRb5','Timesheet');
-			//getting the admins from the database  
+			<?php
+			$result = mysqli_connect('#','#','#','#');
+			//getting the admins from the database
 			include("new_echostudentscript.php");
 				$adminquery = mysqli_query($result,"SELECT user, password FROM echoadmin");
 				$results = $adminquery;
@@ -82,7 +82,7 @@
 							<tr>
 								<td>$row[user]</td>
 								<td>$row[password]</td>
-								
+
 									</tr>
 
 								</table>";
@@ -95,8 +95,8 @@
 			<div id="delete_button">
 			<center><input type="submit" name="delete_yr_tbl" id="deletebutton" value="Delete this years table"></center>
 				<!--javascript we need to alert the user if she actually whats to do this-->
-			</div>	
-				<?php 
+			</div>
+				<?php
 				//we will user noty for the notification
 				$delcall = @$_POST['delete_yr_tbl'];
 					if($delcall){
@@ -105,15 +105,15 @@
 						//we will send the notify applicatoin to send the function that the tbl are the deleted
 
 					}
-			//Deleting years table 
-			//adding admin users passwords or changing it 
-			//adding the version of the timesheet application 
+			//Deleting years table
+			//adding admin users passwords or changing it
+			//adding the version of the timesheet application
 
 
 
 			?>
-			
-			
+
+
 
 
 		</div>

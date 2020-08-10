@@ -1,8 +1,8 @@
 
-<?php 
+<?php
 include("db_connect.php");
 session_start();
-$con = mysql_connect("echoperfect10.org", "echstudent", "bSdRb5", "ep10_wp1")or die("cannot connect");
+$con = mysql_connect("#", "#", "#", "#")or die("cannot connect");
 
 $partialDates = $_POST['partialDate'];
 //this is get the names and names information, we can used this sent to result.
@@ -12,14 +12,14 @@ while($name = mysqli_fetch_array($names, MYSQL_ASSOC)){
 
 
 <tr>
-	<th>Name</th> 
+	<th>Name</th>
 	<th>School</th>
 	<th>Total hours</th>
-	<th>Week Ending</th> 		
+	<th>Week Ending</th>
 
 					</tr>
 <tr>
-<td>{$name['sname']}</td> 
+<td>{$name['sname']}</td>
 <td>{$name['location']}</td>
 <td>{$name['gtotal']} </td>
 <td>{$name['wkending']}</td>
@@ -31,7 +31,7 @@ while($name = mysqli_fetch_array($names, MYSQL_ASSOC)){
 	</table>"
 	;
 	//we need the column data from the databases
-		 
+
 
 }
 
