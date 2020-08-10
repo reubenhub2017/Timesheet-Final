@@ -1,0 +1,455 @@
+/*imports of fonts*/
+@import url(http://fonts.googleapis.com/ccs?family=Karla); /*header font*/
+@import url(http://fonts.googleapis.com/css?family=Montserrat); /*footer font*/
+@import url(http://fonts.googleapis.com/css?family=Questrial); /*font in general*/
+
+
+}
+input[type="password"]{
+	width:260px;
+	height:25px;
+	border-top: 2px;
+	font-size: 18px;
+	border: none;
+	padding: 1px;
+	color:black;
+	font-family: 'Questrial', 'san-serif'
+}
+input[type="number"]{
+	font-size: 18px;
+	padding: 1px;
+
+}
+input[type='submit'] {
+	width:260px;
+	color:white;
+	border: none;
+	border-radius: 2px;
+	padding: 5px;
+	text-align: center;
+	background-color: #0078E7;
+	margin-top: 5px;
+}
+table {
+  	border-collapse: separate;
+  	border-spacing: 0;
+  	width: 100%;
+}
+th,
+td {
+  padding: 6px 15px;
+}
+th {
+  background: #42444e;
+  color: #fff;
+  text-align: left;
+}
+tr:first-child th:first-child {
+  border-top-left-radius: 2px;
+}
+tr:first-child th:last-child {
+  border-top-right-radius: 2px;
+}
+td {
+  border-right: 1px solid #c6c9cc;
+  border-bottom: 1px solid #c6c9cc;
+}
+td:first-child {
+  border-left: 1px solid #c6c9cc;
+}
+tr:nth-child(even) td {
+  background: #eaeaed;
+}
+tr:last-child td:first-child {
+  border-bottom-left-radius: 2px;
+}
+tr:last-child td:last-child {
+  border-bottom-right-radius: 2px;
+}
+
+ .indexnav {
+	font-size: 25px;
+	color: #fff;
+	text-transform:uppercase;
+	height: 30px;
+	width: 100%;
+	background-color:#4F5D6F;
+	padding: 6px;
+	text-align: center;
+
+ }
+  #loader  {
+ 	position:fixed;
+ 	top:0;
+ 	background-color: white;
+ 	text-align: center;
+ 	margin: 0;
+ 	padding: 0;
+ 	background-size: cover;
+ 	/* Set rules to fill background */
+  	min-height: 100%;
+  	min-width: 1024px;
+	
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: auto;
+	
+  /* Set up positioning */
+
+  left: 0;
+
+
+ 	}
+
+
+/*
+The navbar font: Karla, 4 Styles
+The navbar color: light-grey;
+The navbar font-color: white;
+
+*/
+
+.pure-grouped {
+	width: 300px;
+	padding: 20px;
+	position: relative;
+	color:white;
+	overflow: auto;
+    margin: auto;
+    margin-top:px;
+    background-color: rgba(0,0,0,0.5);
+  	top: 0; left: 0; bottom: 0; right: 0;
+}
+.pure-grouped input{
+	border :none;
+	width: 260px;
+	padding: 20px;
+
+
+}
+#submit-button {
+	width:260px;
+	color:white;
+	border: none;
+	border-radius: 2px;
+	padding: 10px;
+	text-align: center;
+	background-color: #0078E7;
+	height:25px;
+}
+.pure-grouped:not(:last-child){
+	
+}
+
+
+
+
+
+
+body {
+	margin:0;
+	padding:0;
+	font-family: 'Questrial', 'san-serif'; 
+	background-color: #fff;
+	color:black;
+
+
+}
+
+
+
+a{
+	text-decoration: none; 
+	color: black;
+
+}
+
+
+h1 {
+	text-align: center;
+	font-size: 25px;
+	color: black;
+	text-transform:uppercase;
+	font-family: 'Questrial', 'san-serif'
+
+}
+input[type="password"]{
+	width:260px;
+	height:25px;
+	border-top: 2px;
+	font-size: 18px;
+	border: none;
+	padding: 1px;
+	color:black;
+	font-family: 'Questrial', 'san-serif'
+}
+input[type="text"]{
+	width:260px;
+	height:25px;
+	border-top: 2px;
+	font-size: 18px;
+	border: none;
+	padding: 1px;
+	color:black;
+	font-family: 'Questrial', 'san-serif'
+}
+#inputresbox input[type="text"] {
+margin: 0 auto;
+margin-left: 10%;
+margin-right: 0;
+height: 50px;
+margin-top: 10px;
+width: 80%;
+}
+
+input[type='submit'] {
+	width:260px;
+	color:white;
+	border: none;
+	border-radius: 2px;
+	padding: 5px;
+	text-align: center;
+	background-color: #0078E7;
+	margin-top: 5px;
+}
+table {
+  	border-collapse: separate;
+  	border-spacing: 0;
+  	width: 100%;
+}
+th,
+td {
+  padding: 6px 15px;
+}
+th {
+  background: #42444e;
+  color: #fff;
+  text-align: left;
+}
+tr:first-child th:first-child {
+  border-top-left-radius: 2px;
+}
+tr:first-child th:last-child {
+  border-top-right-radius: 2px;
+}
+td {
+  border-right: 1px solid #c6c9cc;
+  border-bottom: 1px solid #c6c9cc;
+}
+td:first-child {
+  border-left: 1px solid #c6c9cc;
+}
+tr:nth-child(even) td {
+  background: #eaeaed;
+}
+tr:last-child td:first-child {
+  border-bottom-left-radius: 2px;
+}
+tr:last-child td:last-child {
+  border-bottom-right-radius: 2px;
+}
+
+/*
+The navbar font: Karla, 4 Styles
+The navbar color: light-grey;
+The navbar font-color: white;
+
+*/
+#adminlink {
+color:white;
+text-align: left;
+}
+.pure-grouped {
+	width: 300px;
+	padding: 20px;
+	position: relative;
+    margin: auto;
+    margin-top:10px;
+    height:450px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  	top: 0; left: 0; bottom: 0; right: 0;
+
+}
+.pure-grouped input{
+	border :none;
+	width: 260px;
+	padding: 20px;
+}
+#submit-button {
+	width:260px;
+	color:white;
+	border: none;
+	border-radius: 2px;
+	padding: 5px;
+	text-align: center;
+	background-color: #0078E7
+}
+.pure-grouped:not(:last-child){
+	
+}
+
+#nav {
+	height:40px;
+	width:100%;
+	font-color:#857F7F;
+	position: relative;
+	background-color:#272D32;
+	padding: 10px 0;
+
+	
+
+}
+
+#nav h1  {  
+	text-align: center;
+	
+
+}
+#nav h1 a {
+	color:#fff;
+}
+#results {
+	overflow: scroll;
+	height: 500px;
+	width: 60%;
+	border: 2px solid white;
+	margin: 0 auto;
+	margin-top: 10px;
+
+
+}
+#logout {
+	text-align:  center;
+	margin-right: 50px;
+	text-decoration:none;
+	color:black;
+	margin-top:4px; 
+	margin-left: 2px;
+	text-transform: uppercase;
+}
+#logout:hover{
+	color:grey;
+}
+
+#container-main{
+	background-color: #fff;
+	min-height: 100%;
+	width: 100%;
+	margin: 0 auto;
+	margin-top: 3px;
+
+	}
+#scroll {
+ 	overflow: auto;
+ 
+}
+
+ #container-main {
+	background-color: #4F5D6F  ;
+	height:45px;
+	width:75%;
+  	float: right;
+  	border-top-right-radius: 5px;
+  	border-top-left-radius: 5px; 
+
+
+  	
+}
+
+#container-main input[type=number]{
+	padding: 10px;
+	border-top: solid 2px; 
+	border:none;
+	margin: 0 auto;
+	border-bottom: 5px solid 2px #c9c9c9;
+	transition: border 0.3s;
+    display: block;
+    width:60%;
+    font-family: 'Questrial', 'san-serif';
+    font-size: 14px;
+    margin-top: 5px 
+
+
+}
+#container-main input[type=number]:focus, 
+#container-main input[type=number].focus {
+	border-bottom: 5px solid 2px #969696;
+}
+
+/*
+Searchbar will be grey too 
+The middle in the navbar
+
+*/
+/*
+The footer
+font-size 12px;
+center
+bottom center
+color 
+
+
+}*/
+
+#sidebar {
+	height:600px;
+	width: 200px;
+	float:left;
+	border: 2px solid white;
+	margin-left: 10px;
+	background-color:#fff; 
+	border-top-right-radius:2px;
+	border-top-left-radius: 2px;
+	background-color:#EFEFEF;
+	color: white;
+	margin-top: 3px;
+
+}
+#sidebar h1 {
+	color: white;
+	background-color: #4F5D6F;
+	margin: 0;
+	height: 50px;
+}
+.list  li  {
+	font-size: 12px;
+	list-style-type: none;
+	color: black;
+	height: 30px;
+	text-transform: uppercase;
+	
+
+	
+}
+.list li a:hover {
+	color:grey;
+}
+#footer {
+	text-align: center;
+	color:black;
+	font-size: 12px;
+	bottom:0;
+	height:100px;
+	width: 100%;
+	position: absolute;
+	
+}
+#summary_box h1 {
+	background-color: #EFEFEF;
+	margin: 0;
+	border-top-right-radius: 5px;
+  	border-top-left-radius: 5px; 
+  	padding: px;
+  	color: black;
+  	font-weight: bold;
+  	text-align: left; 
+}
+/*
+the middle dashboard wrapper
+the within middle dashbpard middle dashboard container 
+padding inside 0px
+ 
+the header of the table should be light grey
+
+*/
