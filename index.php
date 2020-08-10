@@ -38,7 +38,7 @@ $(window).load(function(){
 
 <?php
 session_start();
-//error_reporting(0);
+error_reporting(0);
 include("new_echostudentscript.php"); //This includes the functions file.
 $result = mysqli_connect('#','#','#','#'); //Connects to the mysql database 
 
